@@ -158,10 +158,7 @@ def main_menu(conn, cursor):
 
 if __name__ == "__main__":
     conn = mysql.connector.connect(
-        host='localhost',
-        user='cf-python',
-        passwd='password',
-        database='task_database'
+       ${{ SECRET.SQL }}
     )
     cursor = conn.cursor()
 
